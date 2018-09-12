@@ -157,12 +157,12 @@ python detector.py 'path\to\your\image\dir'
 
 ### 2.face compare
 
-Face compare will return L2 distance of 2 faces,a small score means these 2 faces is very similar,of course,L2 distance between 2 same image is 0. 
+Face compare will return L2 distance of 2 faces,a small score means these 2 faces are very similar,of course,L2 distance between 2 same images is 0. 
 
 ```
 python compare.py images/examples/test/{img1,img2}
 ```
-this will return L2 distance between `img1` and `img2`.
+this command will return L2 distance between `img1` and `img2`.
 
 ### 3.face classify
 
