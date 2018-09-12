@@ -17,11 +17,11 @@
 This project uses python2.7 and following packages can be installed with `pip`  or  `conda`
 
 ```
-numpy >= 1.1, < 2.0
-scipy >= 0.13, < 0.17
-pandas >= 0.13, < 0.18
-scikit-learn >= 0.17, < 0.18
-nose >= 1.3.1, < 1.4
+numpy = 1.4
+scipy = 0.15
+pandas = 0.16
+scikit-learn = 0.17
+nose = 1.3.1
 nolearn == 0.5b1
 dlib == 19.10
 ```
@@ -153,7 +153,6 @@ This script will detect all the faces in a single image.
 
 ```
 python detector.py 'path\to\your\image\dir'
-
 ```
 
 ### 2.face compare
@@ -167,7 +166,16 @@ this will return L2 distance between `img1` and `img2`.
 
 ### 3.face classify
 
-The pipeline of face classify has 4 steps.
+The pipeline of face classify has 4 steps.or you can simply run
+
+```
+bash classifier_train.sh example/train/
+```
+This is the training step
+
+```
+bash classifier_test.sh example/test/wang.jpg
+```
 
 **3.1 Detect and align faces**
 
@@ -195,6 +203,5 @@ This step produce a SVM classification model for these 128 dimensions feature ve
 
 ```
 python classifier.py infer ./represent/classifier.pkl $IMAGE
-
 ```
 Inference new faces with confidence.
