@@ -1,6 +1,6 @@
 # 4DFace
 
-4DFace is an open source face project , which contain face detection,face compare and face classification. 
+4DFace is an open source face project , which contain face detection,face comparation and face classification. 
  
 ## Requirements
 
