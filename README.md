@@ -166,11 +166,12 @@ this command will return L2 distance between `img1` and `img2`.
 
 ### 3.face classify
 
-The pipeline of face classify has 4 steps.or you can simply run
+The pipeline of face classify has 4 steps or you can simply run
 
 ```
 bash classifier_train.sh example/train/
 ```
+
 This is the training step
 
 ```
